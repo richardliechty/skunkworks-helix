@@ -1,0 +1,43 @@
+
+
+/* Video Masthead */
+main .section.masthead-video-container {
+    padding: 0;
+}
+
+main div .masthead-video-wrapper {
+    padding: 0;
+    max-width: 100%;
+}
+
+main .masthead-video-container {
+    max-width: 100%;
+}
+
+#vjs_video_4_html5_api {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+body .video-js {
+	background-color: transparent;
+	padding-top: 0;
+}
+
+body .video-js .vjs-tech {
+	position: relative;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	margin-bottom: -4px;
+}
+
+:root .video .vjs-poster {
+	position: absolute;
+	top: -2px;
+}
+
+:root .video-js .vjs-tech {
+	margin-bottom: 0;
+}
+

@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--nav-background-color);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -15,7 +15,7 @@ header nav {
   align-items: center;
   gap: 0 2em;
   margin: auto;
-  max-width: 1264px;
+  max-width: 80%;
   height: var(--nav-height);
   padding: 0 1rem;
   font-family: var(--body-font-family);
@@ -148,7 +148,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 300px;
   height: auto;
 }
 
@@ -170,12 +170,23 @@ header nav[aria-expanded="true"] .nav-sections {
 header nav .nav-sections ul  {
   list-style: none;
   padding-left: 0;
-  font-size: var(--body-font-size-s);
-  font-weight: 500;
+  float: right;
 }
 
-header nav .nav-sections ul > li {
+/* header nav .nav-sections ul > li {
   font-weight: 700;
+  font-size: var(--heading-font-size-s);
+  color: var(--nav-text-color);
+  text-transform: var(--heading-text-transform);
+  letter-spacing: 1px;
+} */
+
+header nav .nav-sections ul > li a {
+  font-size: var(--heading-font-size-s);
+  color: var(--nav-text-color);
+  text-transform: var(--heading-text-transform);
+  letter-spacing: 1px;
+  text-decoration: none;
 }
 
 header nav .nav-sections ul > li > ul {

@@ -1,7 +1,15 @@
 footer {
   padding: 2rem;
-  background-color: var(--overlay-background-color);
-  font-size: var(--body-font-size-s);
+  background-color: var(--footer-background-color);
+  font-size: var(--body-font-size-xs);
+  text-align: center;
+  color: var(--footer-text-color)
+}
+
+footer a:any-link {
+  font-size: var(--body-font-size-xs);
+  color: var(--footer-text-color);
+  text-decoration: none;
 }
 
 footer .footer {
@@ -12,3 +20,11 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
+
+footer .footer > div > div {
+  margin: 0;
+  padding-bottom: .7em;
+}
+
+footer h3 { font-size: var(--heading-font-size-s) }
+
