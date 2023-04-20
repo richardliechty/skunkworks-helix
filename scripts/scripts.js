@@ -71,6 +71,9 @@ async function loadEager(doc) {
     document.body.classList.add('appear');
     await waitForLCP(LCP_BLOCKS);
   }
+  loadScript(`https://assets.adobedtm.com/ba203c1480c9/2dc1fc58c79f/launch-082f89fa8aa4-development.min.js`);
+  loadScript(`https://code.jquery.com/jquery-3.6.4.min.js`);
+
 }
 
 /**
@@ -88,6 +91,18 @@ export function addFavIcon(href) {
   } else {
     document.getElementsByTagName('head')[0].appendChild(link);
   }
+}
+
+export function loadScript(url, callback, type) {
+  const head = document.querySelector('head');
+  const script = document.createElement('script');
+  script.setAttribute('src', url);
+  if (type) {
+    script.setAttribute('type', type);
+  }
+  head.append(script);
+  script.onload = callback;
+  return script;
 }
 
 /**

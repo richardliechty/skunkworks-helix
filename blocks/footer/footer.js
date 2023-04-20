@@ -19,6 +19,10 @@ export default async function decorate(block) {
     const footer = document.createElement('div');
     footer.innerHTML = html;
 
+    var scriptElement = document.createElement('script');
+    scriptElement.setAttribute('type', 'text/javascript');
+    scriptElement.innerHTML = '_satellite.pageBottom();';
+    footer.append(scriptElement);
     decorateIcons(footer);
     block.append(footer);
   }
