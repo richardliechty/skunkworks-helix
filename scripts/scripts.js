@@ -71,9 +71,6 @@ async function loadEager(doc) {
     document.body.classList.add('appear');
     await waitForLCP(LCP_BLOCKS);
   }
-  loadScript(`https://assets.adobedtm.com/ba203c1480c9/2dc1fc58c79f/launch-082f89fa8aa4-development.min.js`);
-  loadScript(`https://code.jquery.com/jquery-3.6.4.min.js`);
-
 }
 
 /**
