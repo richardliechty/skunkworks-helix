@@ -134,9 +134,14 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
+function insertClosingSatelliteTag() {
+  document.body.insertAdjacentHTML("beforeend", "<script type='text/javascript'>_satellite.pageBottom();</script>");
+}
+
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
+  insertClosingSatelliteTag();
   loadDelayed();
 }
 
